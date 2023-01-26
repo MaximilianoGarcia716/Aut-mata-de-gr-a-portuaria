@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.9.0</Version>
+    <SymbolConfigObject version="3.5.9.20" />
+    <ProjectInfo name="ProyectoAutomatasCodesys" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_LREAL" size="8" swapsize="8" typeclass="LReal" iecname="LREAL" />
+    <TypeArray name="T_ARRAY__1__2__1__7__OF_LREAL" size="112" nativesize="112" typeclass="Array" iecname="ARRAY [1..2, 1..7] OF LREAL" basetype="T_LREAL">
+      <ArrayDim minrange="1" maxrange="2" />
+      <ArrayDim minrange="1" maxrange="7" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__21__1__13__OF_LREAL" size="2184" nativesize="2184" typeclass="Array" iecname="ARRAY [1..21, 1..13] OF LREAL" basetype="T_LREAL">
+      <ArrayDim minrange="1" maxrange="21" />
+      <ArrayDim minrange="1" maxrange="13" />
+    </TypeArray>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="Global">
+        <Node name="alturaInicioDesplazamientoCarro" type="T_LREAL" access="ReadWrite" />
+        <Node name="BotonAbrirGancho" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonActivaControlAngulo" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonCerrarGancho" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonDesactivaControlAngulo" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonEmergencia" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonModoAutomatico" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonModoManual" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonOperarMaq" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonPararMaq" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotonReset" type="T_BOOL" access="ReadWrite" />
+        <Node name="ConsignaCarro" type="T_LREAL" access="ReadWrite" />
+        <Node name="ConsignaIzaje" type="T_LREAL" access="ReadWrite" />
+        <Node name="contBarco" type="T_ARRAY__1__21__1__13__OF_LREAL" access="ReadWrite" />
+        <Node name="contMuelle" type="T_ARRAY__1__2__1__7__OF_LREAL" access="ReadWrite" />
+        <Node name="ControlAngulo" type="T_BOOL" access="ReadWrite" />
+        <Node name="ControlPos" type="T_BOOL" access="ReadWrite" />
+        <Node name="FuncionamientoCarro" type="T_BOOL" access="ReadWrite" />
+        <Node name="FuncionamientoIzaje" type="T_BOOL" access="ReadWrite" />
+        <Node name="Gcierre" type="T_BOOL" access="ReadWrite" />
+        <Node name="lh" type="T_LREAL" access="ReadWrite" />
+        <Node name="ml" type="T_LREAL" access="ReadWrite" />
+        <Node name="PalancaCarro" type="T_INT" access="ReadWrite" />
+        <Node name="PalancaIzaje" type="T_INT" access="ReadWrite" />
+        <Node name="PosicionCarroInicioDescensoIzaje" type="T_LREAL" access="ReadWrite" />
+        <Node name="Th" type="T_LREAL" access="ReadWrite" />
+        <Node name="theta" type="T_LREAL" access="ReadWrite" />
+        <Node name="Tt" type="T_LREAL" access="ReadWrite" />
+        <Node name="vh" type="T_LREAL" access="ReadWrite" />
+        <Node name="vt" type="T_LREAL" access="ReadWrite" />
+        <Node name="x_destino" type="T_LREAL" access="ReadWrite" />
+        <Node name="x_origen" type="T_LREAL" access="ReadWrite" />
+        <Node name="xt" type="T_LREAL" access="ReadWrite" />
+        <Node name="y_destino" type="T_LREAL" access="ReadWrite" />
+        <Node name="y_origen" type="T_LREAL" access="ReadWrite" />
+        <Node name="ySeguridadCarro" type="T_LREAL" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
